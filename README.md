@@ -3,7 +3,7 @@
 **Put every sensor stream on one clock.**
 
 [![CI](https://github.com/WayneUSC/anchorsync/actions/workflows/ci.yml/badge.svg)](https://github.com/WayneUSC/anchorsync/actions/workflows/ci.yml)
-![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 [![License](https://img.shields.io/badge/license-Apache--2.0-green)](LICENSE)
 
 A multimodal rig — microphone, IMU, tactile array, force sensor, cameras — has as many clocks as devices.
@@ -32,7 +32,7 @@ pip install "git+https://github.com/WayneUSC/anchorsync"
 pip install "anchorsync[video] @ git+https://github.com/WayneUSC/anchorsync"   # + video files via OpenCV
 ```
 
-Python 3.9+, NumPy, SciPy, pandas.
+Python 3.10+, NumPy, SciPy, pandas.
 
 ## 30-second demo
 

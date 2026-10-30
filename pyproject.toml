@@ -9,7 +9,7 @@ description = "Put every sensor stream on one clock: tap-anchor detection, robus
 readme = "README.md"
 license = "Apache-2.0"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Wen Chen (WayneUSC)" }]
 keywords = [
   "time synchronization", "sensor fusion", "multimodal", "clock drift", "robotics",
