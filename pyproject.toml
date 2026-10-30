@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anchorsync"
+version = "0.1.0"
+description = "Put every sensor stream on one clock: tap-anchor detection, robust matching, offset + drift fitting, timing health and resampling for multimodal recordings."
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Wen Chen (WayneUSC)" }]
+keywords = [
+  "time synchronization", "sensor fusion", "multimodal", "clock drift", "robotics",
+  "IMU", "tactile", "audio", "data collection", "LeRobot",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = ["numpy>=1.22", "scipy>=1.8", "pandas>=1.4"]
+
+[project.optional-dependencies]
+video = ["opencv-python-headless>=4.5"]
+toml = ["tomli>=1.1; python_version < '3.11'"]
+dev = ["pytest>=7", "opencv-python-headless>=4.5", "pyarrow>=10"]
+
+[project.scripts]
+anchorsync = "anchorsync.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/WayneUSC/anchorsync"
+Issues = "https://github.com/WayneUSC/anchorsync/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/anchorsync"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

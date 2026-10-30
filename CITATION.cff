@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use anchorsync in your research, please cite it as below."
+title: "anchorsync: anchor-based clock alignment for multimodal sensor recordings"
+authors:
+  - family-names: Chen
+    given-names: Wen
+version: 0.1.0
+date-released: 2026-10-29
+license: Apache-2.0
+repository-code: "https://github.com/WayneUSC/anchorsync"
+keywords:
+  - time synchronization
+  - multimodal sensing
+  - clock drift
+  - robotics

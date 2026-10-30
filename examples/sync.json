@@ -1,0 +1,11 @@
+{
+  "reference": "mic",
+  "tolerance_ms": 20,
+  "max_drift_ppm": 1000,
+  "streams": [
+    {"name": "mic", "path": "mic.wav"},
+    {"name": "imu", "path": "imu.csv", "kind": "accel", "nominal_rate": 100},
+    {"name": "tactile", "path": "tactile.tsv", "time": "t_ms", "time_unit": "ms", "min_strength": 15},
+    {"name": "cam", "path": "top.mp4", "roi": [200, 120, 160, 160]}
+  ]
+}
